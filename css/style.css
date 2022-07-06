@@ -104,6 +104,9 @@ line-height: 40px;
 color: var(--color-primary);
 }
 
+.logo:hover {
+    color: var(--color-secondary)
+}
 .menu__list {
 font-family: 'Nunito';
 font-style: normal;
@@ -124,8 +127,5 @@ display: flex;
 
 .menu__item:hover, .menu__item:active {
 background-color: var(--color-primary);
-}
-
-.menu__link:hover {
-color: var(--color-secondary)
+color: var(--color-secondary);
 }
