@@ -1,4 +1,15 @@
 
+@font-face {
+    font-family: 'Baloo 2';
+    src: url("/fonts/Baloo2-ExtraBold.ttf");
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url("/fonts/Nunito-Regular.ttf");
+    font-weight: 400;
+}
+
 body,
 html,
 li,
@@ -45,7 +56,7 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: inherit;
-    transition: 1s;
+   
 }
 
 input {
@@ -53,6 +64,11 @@ input {
     border-width: 0px;
     border-color: unset;
 
+}
+
+:root {
+    --color-primary: #01ACB4;
+    --color-secondary: #ffffff;
 }
 
 /* Дмитрий */ 
@@ -64,4 +80,52 @@ input {
 
 
 /* Лана */ 
+/*header*/
 
+header {
+    background: linear-gradient(180deg, #787C85 0%, #4B5056 75.83%);
+    padding: 40px 131px 40px 80px;
+  
+}
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+ 
+}
+.logo {
+font-family: 'Baloo 2';
+font-style: normal;
+font-weight: 800;
+font-size: 30px;
+line-height: 40px;
+color: var(--color-primary);
+}
+
+.menu__list {
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+color: var(--color-primary);
+display: flex;
+
+}
+
+.menu__item {
+    margin-right: 10px;
+    padding: 9px 20px;
+    border-radius: 20px;
+}
+
+.menu__item:hover, .menu__item:active {
+background-color: var(--color-primary);
+}
+
+.menu__link:hover {
+color: var(--color-secondary)
+}
