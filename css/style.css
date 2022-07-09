@@ -69,6 +69,10 @@ input {
 :root {
     --color-primary: #01ACB4;
     --color-secondary: #ffffff;
+    --color-bg-grey: #4B5056;
+    --color-bg-light-grey: #787C85;
+    --color-dark-blue: #1F3865;
+    --color-bg-black: #000000;
 }
 
 /* Дмитрий */ 
@@ -129,3 +133,117 @@ display: flex;
 background-color: var(--color-primary);
 color: var(--color-secondary);
 }
+
+/* section*/
+.section {
+    padding-top: 60px;
+}
+.section_title {
+    font-family: 'Baloo 2';
+font-weight: 800;
+font-size: 40px;
+line-height: 64px;
+text-align: center;
+}
+
+
+.goodidea_title {
+    color: var(--color-primary);
+}
+
+.goodidea {
+    background-color: var(--color-bg-light-grey);
+}
+
+.badidea {
+    background-color: var(--color-bg-grey);
+}
+.badidea_title {
+    color: var(--color-secondary);
+}
+
+.badidea_card {
+    background-color: var(--color-bg-light-grey);
+}
+.cards_container {
+    padding: 40px 80px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.idea_card {
+    display: block;
+border-radius: 4px;
+text-align: center;
+cursor: pointer;
+position: relative;
+}
+
+.idea_img {
+    width: 326px;
+    height: 200px;
+    margin: 30px;
+    border-radius: 4px;
+}
+
+.icon_ok {
+    position: absolute;
+width: 24px;
+height: 29px;
+background-image: url("/img/ok.svg");
+top: 28px;
+left: 32px;
+display: none;
+}
+
+.icon_notOk {
+    position: absolute;
+width: 24px;
+height: 29px;
+background-image: url("/img/notOk.svg");
+top: 31px;
+left: 32px;
+display: none;
+}
+
+.idea_description {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0px 0px 40px;
+}
+.goodidea_description {
+color: var(--color-secondary);
+}
+
+.badidea_description {
+    color: var(--color-dark-blue);
+}
+
+.idea_card:hover {
+background-color: var(--color-primary);
+}
+
+.badidea_card:hover {
+    background-color: var(--color-bg-black);
+}
+
+.badidea_card:hover > .icon_notOk {
+    display: block;
+}
+.badidea_card:hover > .badidea_description {
+    color: var(--color-secondary);
+}
+
+.idea_card:hover > .idea_img {
+    width: 386px;
+    height: 230px;
+    margin: 0px 0px 30px;
+    border-bottom-left-radius: 0px; 
+    border-bottom-right-radius: 0px;
+}
+.idea_card:hover > .icon_ok {
+    display: block;
+} 
+
