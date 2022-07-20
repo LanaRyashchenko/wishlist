@@ -1,12 +1,12 @@
 
 @font-face {
     font-family: 'Baloo 2';
-    src: url("/fonts/Baloo2-ExtraBold.ttf");
+    src: url("../fonts/Baloo2-ExtraBold.ttf");
     font-weight: 800;
 }
 @font-face {
     font-family: 'Nunito';
-    src: url("/fonts/Nunito-Regular.ttf");
+    src: url("../fonts/Nunito-Regular.ttf");
     font-weight: 400;
 }
 
@@ -281,7 +281,7 @@ display: none;
     position: absolute;
 width: 24px;
 height: 29px;
-background-image: url("/img/notOk_black.svg");
+background-image: url("../img/notOk_black.svg");
 top: 31px;
 left: 32px;
 display: none;
@@ -291,7 +291,7 @@ display: none;
     position: absolute;
     width: 32px;
     height: 28.86px;
-    background-image: url("/img/icon_heart.svg");
+    background-image: url("../img/icon_heart.svg");
     top: 31px;
     left: 32px;
     display: none;
@@ -301,7 +301,7 @@ display: none;
     position: absolute;
     width: 28px;
     height: 27px;
-    background-image: url("/img/star.svg");
+    background-image: url("../img/star.svg");
     top: 10px;
     left: 10px;
     display: none;
@@ -393,7 +393,7 @@ background-color: var(--color-primary);
     position: absolute;
     width: 48px;
     height: 48px;
-    background-image: url("/img/present_white.svg");
+    background-image: url("../img/present_white.svg");
     top: 169px;
     left: 169px;
     z-index: 100;
@@ -575,29 +575,29 @@ word-wrap: break-word;
     }
 
     .menu__item_1 {
-      background-image: url("/img/heart.svg");
+      background-image: url("../img/heart.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
 
     .menu__item_2 {
-        background-image: url("/img/star.svg");
+        background-image: url("../img/star.svg");
         background-repeat: no-repeat;
         background-position: center;
       }
       .menu__item_3 {
-        background-image: url("/img/ok.svg");
+        background-image: url("../img/ok.svg");
         background-repeat: no-repeat;
         background-position: center;
       }
       .menu__item_4 {
-        background-image: url("/img/notOk_color.svg");
+        background-image: url("../img/notOk_color.svg");
         background-repeat: no-repeat;
         background-position: center;
       }
     
       .menu__item_5 {
-        background-image: url("/img/present.svg");
+        background-image: url("../img/present.svg");
         background-repeat: no-repeat;
         background-position: center;
       }
