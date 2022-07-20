@@ -13,41 +13,103 @@
             <div class="logo"><a class="logo__link link" href="#home">My wishes</a></div>
             <nav class="menu">
                 <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link link" href="#3dreams">3 dreams</a></li>
-                    <li class="menu__item"><a class="menu__link link" href="#5brands">5 brands</a></li>
-                    <li class="menu__item"><a class="menu__link link" href="#3goodidea">3 good idea</a></li>
-                    <li class="menu__item"><a class="menu__link link" href="#3badidea">3 bad idea</a></li>
-                    <li class="menu__item"><a class="menu__link link" href="#wishlist">wishlist</a></li>
+                    <li class="menu__item menu__item_1"><a class="menu__link link" href="#3dreams">3 dreams</a></li>
+                    <li class="menu__item menu__item_2"><a class="menu__link link" href="#5brands">5 brands</a></li>
+                    <li class="menu__item menu__item_3"><a class="menu__link link" href="#3goodidea">3 good idea</a></li>
+                    <li class="menu__item menu__item_4"><a class="menu__link link" href="#3badidea">3 bad idea</a></li>
+                    <li class="menu__item menu__item_5"><a class="menu__link link" href="#wishlist">wishlist</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="1st-screen"></section>
-        <section class="dreams section" id="3dreams"></section>
-        <section class="brands section" id="5brands"></section>
-        <section class="goodidea section" id="3goodidea">
-            <h2 class="section_title goodidea_title">
+        <div class="main_container">
+        <section class="1st-screen">
+            <div class="section_container"></div>
+        </section>
+
+        <section class="dark_grey_section section" id="3dreams">
+            <div class="section_container">
+            <h2 class="section_title white_section_title"> 
+                <span class="small_circle"></span><span class="big_circle"></span>
+                3 dreams
+                <span class="big_circle"></span><span class="small_circle"></span>
+            </h2>
+            <div class="cards_container">
+                <div class="idea_card section_with_background_card dreams_card"><img class="idea_img" src="img/dream_1.jpg"><span class="icon_heart"></span><p class="idea_description green_description dreams_section_description">travel to Cuba</p></div>
+                <div class="idea_card section_with_background_card dreams_card"><img class="idea_img" src="img/dream_2.jpg"><span class="icon_heart"></span><p class="idea_description green_description dreams_section_description">world fame</p></div>
+                <div class="idea_card section_with_background_card dreams_card"><img class="idea_img" src="img/dream_3.jpg"><span class="icon_heart"></span><p class="idea_description green_description dreams_section_description">cozy art workshop</p></div>
+            </div>
+        </div>
+        </section>
+
+        <section class="dark_grey_section section" id="5brands">
+            <div class="section_container">
+            <h2 class="section_title green_section_title"> 
+                <span class="small_circle"></span><span class="big_circle"></span>
+                5 brands
+                <span class="big_circle"></span><span class="small_circle"></span>
+            </h2>
+            <div class="cards_container brands_list">
+                <div class="brands_card"><img class="brand_img" src="img/brands_1.jpg"><span class="icon_star"></span><p class="idea_description green_description brands_section_description">apple</p></div>
+                <div class="brands_card"><img class="brand_img" src="img/brands_2.jpg"><span class="icon_star"></span><p class="idea_description green_description brands_section_description">IKEA</p></div>
+                <div class="brands_card"><img class="brand_img" src="img/brands_3.jpg"><span class="icon_star"></span><p class="idea_description green_description brands_section_description">Jo Malone</p></div>
+                <div class="brands_card"><img class="brand_img" src="img/brands_4.jpg"><span class="icon_star"></span><p class="idea_description green_description brands_section_description">philips</p></div>
+                <div class="brands_card"><img class="brand_img" src="img/brands_5.jpg"><span class="icon_star"></span><p class="idea_description green_description brands_section_description">D&G</p></div>
+
+            </div>
+        </div>
+        </section>
+
+        <section class="light_grey_section section" id="3goodidea">
+            <div class="section_container">
+            <h2 class="section_title green_section_title"> 
+                <span class="small_circle"></span><span class="big_circle"></span>
                 3 always GOOD idea
+                <span class="big_circle"></span><span class="small_circle"></span>
             </h2>
             <div class="cards_container">
-                <div class="idea_card"><img class="idea_img" src="img/goodidea_1.jpg"><span class="icon_ok"></span><p class="idea_description goodidea_description">candles</p></div>
-                <div class="idea_card"><img class="idea_img" src="img/goodidea_2.jpg"><span class="icon_ok"></span><p class="idea_description goodidea_description">cute notebooks</p></div>
-                <div class="idea_card"><img class="idea_img" src="img/goodidea_3.jpg"><span class="icon_ok"></span><p class="idea_description goodidea_description">money</p></div>
+                <div class="idea_card light_grey_section_card goodidea_card"><img class="idea_img" src="img/goodidea_1.jpg"><span class="icon_ok"></span><p class="idea_description white_description">candles</p></div>
+                <div class="idea_card light_grey_section_card goodidea_card"><img class="idea_img" src="img/goodidea_2.jpg"><span class="icon_ok"></span><p class="idea_description white_description">cute notebooks</p></div>
+                <div class="idea_card light_grey_section_card goodidea_card"><img class="idea_img" src="img/goodidea_3.jpg"><span class="icon_ok"></span><p class="idea_description white_description">money</p></div>
+            </div>
             </div>
         </section>
-        <section class="badidea section" id="3badidea">
-            <h2 class="section_title badidea_title">
+
+        <section class="dark_grey_section section" id="3badidea">
+            <div class="section_container">
+            <h2 class="section_title white_section_title">
+                <span class="small_circle"></span><span class="big_circle"></span>
                 3 always BAD idea
+                <span class="big_circle"></span><span class="small_circle"></span>
             </h2>
             <div class="cards_container">
-                <div class="idea_card badidea_card"><img class="idea_img" src="img/badidea_1.jpg"><span class="icon_notOk"></span><p class="idea_description badidea_description">candles</p></div>
-                <div class="idea_card badidea_card"><img class="idea_img" src="img/badidea_2.jpg"><span class="icon_notOk"></span><p class="idea_description badidea_description">cute notebooks</p></div>
-                <div class="idea_card badidea_card"><img class="idea_img" src="img/badidea_3.jpg"><span class="icon_notOk"></span><p class="idea_description badidea_description">money</p></div>
+                <div class="idea_card section_with_background_card badidea_card"><img class="idea_img" src="img/badidea_1.jpg"><span class="icon_notOk"></span><p class="idea_description blue_description">candles</p></div>
+                <div class="idea_card section_with_background_card badidea_card"><img class="idea_img" src="img/badidea_2.jpg"><span class="icon_notOk"></span><p class="idea_description blue_description">cute notebooks</p></div>
+                <div class="idea_card section_with_background_card badidea_card"><img class="idea_img" src="img/badidea_3.jpg"><span class="icon_notOk"></span><p class="idea_description blue_description">money</p></div>
+            </div>
+        </div>
+        </section>
+
+        <section class="light_grey_section section" id="wishlist">
+            <div class="section_container">
+                <h2 class="section_title green_section_title"> 
+                    <span class="small_circle"></span><span class="big_circle"></span>
+                    wishlist
+                    <span class="big_circle"></span><span class="small_circle"></span>
+                </h2>
+                <div class="cards_container wishlist_list">
+                    <div class="wishlist_card"><img class="idea_img" src="img/wishlist_1.jpg"> <div class="wishlist_mask"><p class="wishlist_mask_title">Yves Saint Laurent Black Opium</p><a href="https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059" target="_blank" class="wishlist_mask_link">https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059</a><i class="img__icon"></i></div></div>
+                    <div class="wishlist_card"><img class="idea_img" src="img/wishlist_2.jpg"> <div class="wishlist_mask"><p class="wishlist_mask_title">Yves Saint Laurent Black Opium</p><a href="https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059" target="_blank" class="wishlist_mask_link">https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059</a><i class="img__icon"></i></div></div>
+                    <div class="wishlist_card"><img class="idea_img" src="img/wishlist_3.jpg"> <div class="wishlist_mask"><p class="wishlist_mask_title">Yves Saint Laurent Black Opium</p><a href="https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059" target="_blank" class="wishlist_mask_link">https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059</a><i class="img__icon"></i></div></div>
+                    <div class="wishlist_card"><img class="idea_img" src="img/wishlist_4.jpg"> <div class="wishlist_mask"><p class="wishlist_mask_title">Yves Saint Laurent Black Opium</p><a href="https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059" target="_blank" class="wishlist_mask_link">https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059</a><i class="img__icon"></i></div></div>
+                    <div class="wishlist_card"><img class="idea_img" src="img/wishlist_5.jpg"> <div class="wishlist_mask"><p class="wishlist_mask_title">Yves Saint Laurent Black Opium</p><a href="https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059" target="_blank" class="wishlist_mask_link">https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059</a><i class="img__icon"></i></div></div>
+                    <div class="wishlist_card"><img class="idea_img" src="img/wishlist_6.jpg"> <div class="wishlist_mask"><p class="wishlist_mask_title">Yves Saint Laurent Black Opium</p><a href="https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059" target="_blank" class="wishlist_mask_link">https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059</a><i class="img__icon"></i></div></div>
+                </div>
             </div>
         </section>
-        <section class="wishlist section" id="wishlist"></section>
+    </div>
     </main>
-    <footer>bad idea</footer>
+  
 </body>
 </html>
