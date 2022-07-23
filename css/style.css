@@ -91,12 +91,16 @@ input {
 header {
     background: linear-gradient(180deg, #787C85 0%, #4B5056 75.83%);
     padding: 40px 80px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 300;
   
 }
-.header_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+
+.first-screen {
+    padding-top: 120px;
 }
 
 .logo {
@@ -108,12 +112,25 @@ line-height: 40px;
 color: var(--color-primary);
 }
 
+
+.logo_header {
+    position: fixed;
+    top: 40px;
+left: 80px;
+z-index: 9999;
+}
+
 .logo:hover {
     color: var(--color-secondary)
 }
 
 /*menu */ 
+
 .menu__list {
+    margin: 0 auto;
+    max-width: 1280px;
+    display: flex;
+    justify-content: flex-end;
 font-family: 'Nunito';
 font-style: normal;
 font-weight: 400;
@@ -121,8 +138,6 @@ font-size: 16px;
 line-height: 22px;
 text-align: center;
 color: var(--color-primary);
-display: flex;
-
 }
 
 .menu__item {
@@ -445,16 +460,17 @@ margin: 0 auto;
 display: flex;
 }
 .avatar {
-    padding: 100px 80px 80px 100px;
+    padding: 100px 80px 0px 0px;
     background-image: url("../img/bubbles.svg"), linear-gradient(180deg, #4B5056 0%, rgba(75, 80, 86, 0) 100%);
     background-position: left;
     background-repeat: no-repeat;
 }
 .avatar_photo {
     width: 460px;
-    height: 456px;
+    height: 460px;
   border-radius: 50%;
   overflow: hidden;
+  margin-left: 100px;
 }
 
 .autor-speech {
@@ -475,7 +491,7 @@ text-align: left;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 140%;
+    line-height: 28px;
 color: var(--color-primary);
 text-align: left;
 }
@@ -483,7 +499,7 @@ text-align: left;
 .countdown {
    display: flex;
    justify-content: end;
-   margin-right: 65px;
+   margin: 10px 65px 0px 0px;
 
 }
 .first {
@@ -533,6 +549,60 @@ font-size: 30px;
 line-height: 48px;
 
   }
+.social {
+    height: 48px;
+    margin-top: 32px;
+}
+  .social-icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+  }
+
+  .facebook {
+    background-image: url("../img/facebook.svg");
+    margin-right: 10px;
+  }
+  .instagram {
+    background-image: url("../img/instagram.svg");
+  }
+
+  footer {
+    background-color: var(--color-bg-light-grey);
+    padding: 0px 80px;
+    height: 280px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .footer_circle1 {
+    width: 407px;
+    height: 407px;
+    background: #23272D;
+    border-radius: 50%;
+    opacity: 0.8;
+    position: relative;
+    display: block;
+    flex-shrink: 0;
+    mix-blend-mode: multiply;
+  }
+
+  .footer_circle2 {
+    width: 166.66px;
+    height: 166.66px;
+    background: #23272D;
+    border-radius: 50%;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: -83.33px;
+    display: block;
+    flex-shrink: 0;
+    mix-blend-mode: multiply;
+  }
+
+
 @media screen and (max-width: 1200px){
     .cards_container {
         flex-wrap: wrap;
@@ -549,10 +619,155 @@ line-height: 48px;
     .wishlist_card {
         margin: 0px 20px 60px;
     }
-
-    header {
-        padding: 20px 30px 20px;
+    .first-screen {
+        padding-top: 0px;
     }
+
+    .first-screen_title {
+font-size: 50px;
+line-height: 80px;
+    }
+
+    .first-screen_description {
+font-size: 16px;
+line-height: 22px;
+    }
+    .autor-speech {
+        margin: 140px 20px 0px;
+    }
+    .first {
+        width: 278px;
+        height: 278px;
+    }
+    .countdown {
+        justify-content: left;
+        margin: 40px 76px 60px 0px;
+    }
+
+    .timer-description {
+        padding-top: 105px;
+        font-size: 16px;
+        line-height: 22px;
+
+    }
+    .timer {
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    .second {
+        padding: 45.5px 37px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .left-side {
+        margin: 0;
+        width: 100%;
+        height: 80px;
+        background: linear-gradient(180deg, #787C85 0%, #4B5056 75.83%);
+        position: fixed;
+        top: 0px;
+        z-index: 1000;
+        
+    }
+    .avatar {
+        background: none;
+        padding: 0px;
+       }
+        .avatar_photo {
+            position: absolute;
+            background: none;
+            width: 60px;
+            height: 60px;
+            top: 10px;
+            left: 20px;
+            display: block;
+            z-index: 400;
+            margin-left: 0px;
+        }
+
+        .logo {
+            position: fixed;
+    top: 20px;
+    left: 90px;
+        }
+
+        .social {
+            position: absolute;
+    right: 20px;
+    top: 16px;
+    left: auto;
+    margin: 0 auto;
+        }
+
+        header {
+            position: fixed;
+           padding: 0px;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            width: 100%;
+             background: linear-gradient(180deg, #787C85 0%, #4B5056 75.83%);;
+            
+        }
+        .menu__list {
+            font: 0/0 serif;
+            color: transparent;
+            display: flex;
+            justify-content: space-between;  
+            margin: 0px 20px;
+    }
+
+    .menu__item {
+        margin-right: 0px;
+        padding: 0px;
+        }
+
+        .menu__link {
+            display: block;
+            height: 48px;
+            width: 48px;
+        }
+    .menu__item:last-child {
+        margin-right: 0px;
+    }
+
+    .menu__item_1 {
+      background-image: url("../img/heart.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .menu__item_2 {
+        background-image: url("../img/star.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .menu__item_3 {
+        background-image: url("../img/ok.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .menu__item_4 {
+        background-image: url("../img/notOk_color.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    
+      .menu__item_5 {
+        background-image: url("../img/present.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .menu__item:hover, .menu__item:active, .menu__item:focus {
+            background-color: unset; 
+        }
+
+        .menu__item:hover, .menu__item:active, .menu__item:focus  {
+            filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(324deg) brightness(0%) contrast(104%);
+        }
 }
 
 @media screen and (max-width: 800px){
@@ -607,100 +822,10 @@ line-height: 48px;
         margin: 0px 12px;
       
     }
+
+
    
-
-    header {
-    position: relative;
-    padding: 0px;
-   
-    }
-
-    .header_container {
-        position: fixed;
-        height: 82px;
-        bottom: 0;
-        left: 0;
-        z-index: 100;
-        width: 100%;
-        background-color: var(--color-bg-light-grey);
-        
-    }
-    .header_container::after {
-        content: "";        
-        position: absolute;
-        width: 134px;
-        height: 5px;
-        left: calc(50% - 134px/2 - 0.5px);
-        bottom: 8px;
-        background: #0B0B0B;
-        border-radius: 100px;
-    }
-
-    .menu {
-        width: 100%;
-        padding: 0px 20px;
-    }
-    .logo {
-        display: none;
-    }
-
-    .menu__list {
-            font: 0/0 serif;
-            color: transparent;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;      
-    }
-
-    .menu__item {
-        margin-right: 0px;
-        padding: 0px;
-        }
-
-        .menu__link {
-            display: block;
-            height: 48px;
-            width: 48px;
-        }
-    .menu__item:last-child {
-        margin-right: 0px;
-    }
-
-    .menu__item_1 {
-      background-image: url("../img/heart.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .menu__item_2 {
-        background-image: url("../img/star.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-      .menu__item_3 {
-        background-image: url("../img/ok.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-      .menu__item_4 {
-        background-image: url("../img/notOk_color.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-      }
     
-      .menu__item_5 {
-        background-image: url("../img/present.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-
-      .menu__item:hover, .menu__item:active, .menu__item:focus {
-            background-color: unset; 
-        }
-
-        .menu__item:hover, .menu__item:active, .menu__item:focus  {
-            filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(324deg) brightness(0%) contrast(104%);
-        }
 
         .brands_list {
             display: flex;
@@ -721,4 +846,6 @@ line-height: 48px;
             line-height: 80px;
             margin: 0 auto;
         }
+
+        
     }
