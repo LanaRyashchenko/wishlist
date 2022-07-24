@@ -110,15 +110,13 @@ font-weight: 800;
 font-size: 30px;
 line-height: 40px;
 color: var(--color-primary);
-}
-
-
-.logo_header {
-    position: fixed;
-    top: 40px;
+position: fixed;
+top: 40px;
 left: 80px;
 z-index: 9999;
 }
+
+
 
 .logo:hover {
     color: var(--color-secondary)
@@ -568,42 +566,73 @@ line-height: 48px;
   }
 
   footer {
-    background-color: var(--color-bg-light-grey);
-    padding: 0px 80px;
-    height: 280px;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-
+        background: var(--color-bg-light-grey);
+        padding: 160px 80px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
   }
-  .footer_circle1 {
-    width: 407px;
-    height: 407px;
-    background: #23272D;
-    border-radius: 50%;
-    opacity: 0.8;
-    position: relative;
+  footer:before {
+    content: "";
     display: block;
-    flex-shrink: 0;
-    mix-blend-mode: multiply;
-  }
-
-  .footer_circle2 {
-    width: 166.66px;
-    height: 166.66px;
-    background: #23272D;
+    width: 410px;
+    height: 410px;
     border-radius: 50%;
-    opacity: 0.8;
+    background: #787C85;
+    mix-blend-mode: multiply;
     position: absolute;
-    top: 0;
-    right: -83.33px;
+    top: 0px;
+    left: 50%;
+    margin-left: -205px;
+}
+
+footer:after {
+    content: "";
     display: block;
-    flex-shrink: 0;
+    width: 166px;
+    height: 166px;
+    border-radius: 50%;
+    background: #787C85;
     mix-blend-mode: multiply;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: 119px;
+}
+.footer_facebook {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url("../img/footer_facebook.svg");
+   
   }
 
+  .footer_instagram{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url("../img/footer_instagram.svg");
+   
+  }
+
+  .logo_footer {
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--color-primary);
+    }
 
 @media screen and (max-width: 1200px){
+
+    footer {
+        padding: 160px 20px 40px;
+        margin-bottom: 48px;
+       
+  }
     .cards_container {
         flex-wrap: wrap;
         align-items: center;
@@ -771,7 +800,10 @@ line-height: 22px;
 }
 
 @media screen and (max-width: 800px){
-
+    footer {
+       display: none;
+       
+  }
     .section_title {
         font-size: 30px;
         padding: 0px 20px;
