@@ -626,7 +626,17 @@ footer:after {
     color: var(--color-primary);
     }
 
+    .wish_img {
+        width: 100%;
+        border-radius: 6px;
+    }
 @media screen and (max-width: 1200px){
+
+    .idea_img {
+     
+        height: 200px;
+        border-radius: 6px;
+    }
 
     footer {
         padding: 160px 20px 40px;
@@ -815,9 +825,14 @@ line-height: 22px;
         pointer-events: none;
     }
 
+    .idea_card:last-child {
+        margin-right: 0px;
+        margin: 0px;
+    }
+
     .wishlist_card {
         width: 100%;
-        margin: 0 0 40px;
+        margin: 0 0 30px;
         pointer-events: none;
     }
 
